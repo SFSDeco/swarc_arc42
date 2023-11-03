@@ -11,7 +11,7 @@ Folgende grundlegende Requirements, Quality Goals und Stakeholders wurden als si
 
 </div>
 
-Functional Requirements:
+### Functional Requirements:
 * User Registrierung
 * Profilerstellung
 * Suche und Bestellen von Mitfahrgelegenheiten
@@ -22,31 +22,16 @@ Functional Requirements:
 * User Feedback und Support System
 * Report- und Analysefunktionen
 
+### Non-functional Requirements:
+* Hohes level von Security und Datenschutz
+* Skalierbar um hohes Volumen an Nutzern und Fahrern unterstützen zu können
+* Leistungsoptimisierung um eine schnelle, zuverlässige App-Nutzung zu garantieren
+* Vereinbarkeit mit diversen Mobilgeräten und Betriebssystemen
+* Einhaltung von allen relevanten Vorschriften und Notwendigkeiten
+
+
 
 <div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-From the point of view of the end users a system is created or modified
-to improve support of a business activity and/or improve the quality.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Short textual description, probably in tabular use-case format. If
-requirements documents exist this overview should refer to these
-documents.
-
-Keep these excerpts as short as possible. Balance readability of this
-document with potential redundancy w.r.t to requirements documents.
-
-See [Introduction and Goals](https://docs.arc42.org/section-1/) in the
-arc42 documentation.
 
 ## Quality Goals
 
