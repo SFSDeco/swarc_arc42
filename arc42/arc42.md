@@ -1,40 +1,7 @@
-# 
-
-**About arc42**
-
-arc42, the template for documentation of software and system
-architecture.
-
-Template Version 8.2 EN. (based upon AsciiDoc version), January 2023
-
-Created, maintained and © by Dr. Peter Hruschka, Dr. Gernot Starke and
-contributors. See <https://arc42.org>.
-
-<div class="note">
-
-This version of the template contains some help and explanations. It is
-used for familiarization with arc42 and the understanding of the
-concepts. For documentation of your own system you use better the
-*plain* version.
-
-</div>
-
-<div style="page-break-after: always;"></div>
-
 # Introduction and Goals
 
-Describes the relevant requirements and the driving forces that software
-architects and development team must consider. These include
-
--   underlying business goals,
-
--   essential features,
-
--   essential functional requirements,
-
--   quality goals for the architecture and
-
--   relevant stakeholders and their expectations
+RideShare Start-Up ist ein Start-Up mit 5-8 Mitarbeitern, das ein RideShare Programm entwickelt.
+Folgende grundlegende Requirements, Quality Goals und Stakeholders wurden als signifikant identifiziert.
 
 ## Requirements Overview
 
@@ -44,10 +11,17 @@ architects and development team must consider. These include
 
 </div>
 
-Short description of the functional requirements, driving forces,
-extract (or abstract) of requirements. Link to (hopefully existing)
-requirements documents (with version number and information where to
-find it).
+Functional Requirements:
+* User Registrierung
+* Profilerstellung
+* Suche und Bestellen von Mitfahrgelegenheiten
+* Real-time Nachverfolgung von den Mitfahrgelegenheiten
+* Real-time Updates von den Mitfahrgelegenheiten
+* Integriertes Zahlungssystem
+* Verifizierungs, Bewertungs und Zulassungssystem von den Fahrern und Passagieren
+* User Feedback und Support System
+* Report- und Analysefunktionen
+
 
 <div class="formalpara-title">
 
