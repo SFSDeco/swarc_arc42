@@ -120,6 +120,7 @@ to the architecture and its documentation.
 | Amirah Rahman   | RideShare Driver Association   | *                      |
 | Javier Gomez    | Sustainable Transportation NGO | *                      |
 | John            | Investor                       | innovation, scalability|
+| Fahrer          | RideShare Driver Association   | *                      |
 
 <div style="page-break-after: always;"></div>
 
