@@ -127,14 +127,14 @@ level of detail of your work and its results.
 Table with role names, person names, and their expectations with respect
 to the architecture and its documentation.
 
-| Role/Name       | Contact                        | Expectations       |
-|-----------------|--------------------------------|--------------------|
-| Maryam Pate     | Venture Capital Firm XYZ       | *                  |
-| Raj Gupta       | Local Transportation Authority | *                  |
-| Megan Chen      | Creative Agency ABC            | *                  |
-| Amirah Rahman   | RideShare Driver Association   | *                  |
-| Javier Gomez    | Sustainable Transportation NGO | *                  |
-| John            | Investor                       | unaffiliated       |
+| Role/Name       | Contact                        | Expectations           |
+|-----------------|--------------------------------|------------------------|
+| Maryam Pate     | Venture Capital Firm XYZ       | *                      |
+| Raj Gupta       | Local Transportation Authority | *                      |
+| Megan Chen      | Creative Agency ABC            | *                      |
+| Amirah Rahman   | RideShare Driver Association   | *                      |
+| Javier Gomez    | Sustainable Transportation NGO | *                      |
+| John            | Investor                       | innovation, scalability|
 
 <div style="page-break-after: always;"></div>
 
