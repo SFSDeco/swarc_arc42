@@ -12,15 +12,37 @@ Folgende grundlegende Requirements, Quality Goals und Stakeholders wurden als si
 </div>
 
 ### Functional Requirements:
-* User Registrierung
-* Profilerstellung
-* Suche und Bestellen von Mitfahrgelegenheiten
-* Real-time Nachverfolgung von den Mitfahrgelegenheiten
-* Real-time Updates von den Mitfahrgelegenheiten
-* Integriertes Zahlungssystem
-* Verifizierungs, Bewertungs und Zulassungssystem von den Fahrern und Passagieren
-* User Feedback und Support System
-* Report- und Analysefunktionen
+* User Registrierung:
+    * Nutzung ohne Erstellung eines repräsentativen Users unmöglich/nicht tragbar
+      
+* Profilerstellung:
+    * Gewährleistet diversen Usern eine personalisierte Erfahrung
+    * Erlaubt Rückverfolgung von Eventuellen Problemen
+      
+* Suche und Bestellen von Mitfahrgelegenheiten:
+    * Basisfunktionalität der App
+      
+* Real-time Nachverfolgung von den Mitfahrgelegenheiten:
+    * Aktives Tracking um Startort, Standort und Zielort mit der Realität abzugleichen
+      
+* Real-time Updates von den Mitfahrgelegenheiten:
+    * Abgelaufene/Losgefahrene Mitfahrgelegenheiten sollen nicht mehr angezeigt werden
+    * Kurzfristige und Langfristige Angebote
+      
+* Integriertes Zahlungssystem:
+    * Erleichterung des Zahlungsprozesses zwischen Fahrern und Passagieren
+      
+* Verifizierungs, Bewertungs und Zulassungssystem von den Fahrern und Passagieren:
+    * Ermöglicht Feedback für zukünftige Nutzung von beiden Seiten
+    * Sperrung von Usern die generell negativ auffallen
+      
+* User Feedback und Support System:
+    * Dient der Bug-Findung, QOL-Identifikation und App-spezifischer Problemlösung
+      
+* Report- und Analysefunktionen:
+    * Unterstützt die User mit gesammelten Daten und Statistiken zu ihren Fahrten
+    * Erlaubt die Meldung von eventuellen Verstößen
+      
 
 ### Non-functional Requirements:
 * Hohes level von Security und Datenschutz
@@ -67,9 +89,11 @@ architect do not know how the quality of your work will be judged…
 
 **Form**
 
-</div>
-
-A table with quality goals and concrete scenarios, ordered by priorities
+| Quality Goal | Concrete Scenario                                                                  | Priority |
+|--------------|------------------------------------------------------------------------------------|----------|
+| Security     | Sensitive Daten sollen unter keinen Umständen in die Hände Unbefugter fallen       | 1        |
+| Reliabilty   | Alle verfügbaren Informationen sollen zu jeder Zeit zuverlässig verfügbar sein     | 2        |
+| Scalability  | Es wurde von Stakeholdern gewünscht das die App schnell auf höhere Anforderungen skalierbar ist | 3        |
 
 ## Stakeholders
 
