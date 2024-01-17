@@ -12,299 +12,104 @@ Folgende grundlegende Requirements, Quality Goals und Stakeholders wurden als si
 </div>
 
 ### Functional Requirements:
+
 * User Registrierung:
-    * Nutzung ohne Erstellung eines repräsentativen Users unmöglich/nicht tragbar
-      
+
+  * Nutzung ohne Erstellung eines repräsentativen Users unmöglich/nicht tragbar
 * Profilerstellung:
-    * Gewährleistet diversen Usern eine personalisierte Erfahrung
-    * Erlaubt Rückverfolgung von Eventuellen Problemen
-      
+
+  * Gewährleistet diversen Usern eine personalisierte Erfahrung
+  * Erlaubt Rückverfolgung von Eventuellen Problemen
 * Suche und Bestellen von Mitfahrgelegenheiten:
-    * Basisfunktionalität der App
-      
+
+  * Basisfunktionalität der App
 * Real-time Nachverfolgung von den Mitfahrgelegenheiten:
-    * Aktives Tracking um Startort, Standort und Zielort mit der Realität abzugleichen
-      
+
+  * Aktives Tracking um Startort, Standort und Zielort mit der Realität abzugleichen
 * Real-time Updates von den Mitfahrgelegenheiten:
-    * Abgelaufene/Losgefahrene Mitfahrgelegenheiten sollen nicht mehr angezeigt werden
-    * Kurzfristige und Langfristige Angebote
-      
+
+  * Abgelaufene/Losgefahrene Mitfahrgelegenheiten sollen nicht mehr angezeigt werden
+  * Kurzfristige und Langfristige Angebote
 * Integriertes Zahlungssystem:
-    * Erleichterung des Zahlungsprozesses zwischen Fahrern und Passagieren
-      
+
+  * Erleichterung des Zahlungsprozesses zwischen Fahrern und Passagieren
 * Verifizierungs, Bewertungs und Zulassungssystem von den Fahrern und Passagieren:
-    * Ermöglicht Feedback für zukünftige Nutzung von beiden Seiten
-    * Sperrung von Usern die generell negativ auffallen
-      
+
+  * Ermöglicht Feedback für zukünftige Nutzung von beiden Seiten
+  * Sperrung von Usern die generell negativ auffallen
 * User Feedback und Support System:
-    * Dient der Bug-Findung, QOL-Identifikation und App-spezifischer Problemlösung
-      
+
+  * Dient der Bug-Findung, QOL-Identifikation und App-spezifischer Problemlösung
 * Report- und Analysefunktionen:
-    * Unterstützt die User mit gesammelten Daten und Statistiken zu ihren Fahrten
-    * Erlaubt die Meldung von eventuellen Verstößen
-      
+
+  * Unterstützt die User mit gesammelten Daten und Statistiken zu ihren Fahrten
+  * Erlaubt die Meldung von eventuellen Verstößen
 
 ### Non-functional Requirements:
+
 * Hohes level von Security und Datenschutz
 * Skalierbar um hohes Volumen an Nutzern und Fahrern unterstützen zu können
 * Leistungsoptimisierung um eine schnelle, zuverlässige App-Nutzung zu garantieren
 * Vereinbarkeit mit diversen Mobilgeräten und Betriebssystemen
 * Einhaltung von allen relevanten Vorschriften und Notwendigkeiten
 
-
-
 <div class="formalpara-title">
 
 ## Quality Goals
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-The top three (max five) quality goals for the architecture whose
-fulfillment is of highest importance to the major stakeholders. We
-really mean quality goals for the architecture. Don’t confuse them with
-project goals. They are not necessarily identical.
-
-Consider this overview of potential topics (based upon the ISO 25010
-standard):
-
-![Categories of Quality
-Requirements](images/01_2_iso-25010-topics-EN.drawio.png)
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should know the quality goals of your most important stakeholders,
-since they will influence fundamental architectural decisions. Make sure
-to be very concrete about these qualities, avoid buzzwords. If you as an
-architect do not know how the quality of your work will be judged…
-
-<div class="formalpara-title">
-
-**Form**
-
-| Quality Goal | Concrete Scenario                                                                  | Priority |
-|--------------|------------------------------------------------------------------------------------|----------|
-| Security     | Sensitive Daten sollen unter keinen Umständen in die Hände Unbefugter fallen       | 1        |
-| Reliabilty   | Alle verfügbaren Informationen sollen zu jeder Zeit zuverlässig verfügbar sein     | 2        |
+| Quality Goal | Concrete Scenario                                                                                 | Priority |
+| ------------ | ------------------------------------------------------------------------------------------------- | -------- |
+| Security     | Sensitive Daten sollen unter keinen Umständen in die Hände Unbefugter fallen                    | 1        |
+| Reliabilty   | Alle verfügbaren Informationen sollen zu jeder Zeit zuverlässig verfügbar sein                 | 2        |
 | Scalability  | Es wurde von Stakeholdern gewünscht das die App schnell auf höhere Anforderungen skalierbar ist | 3        |
 
 ## Stakeholders
 
-<div class="formalpara-title">
 
-**Contents**
-
-</div>
-
-Explicit overview of stakeholders of the system, i.e. all person, roles
-or organizations that
-
--   should know the architecture
-
--   have to be convinced of the architecture
-
--   have to work with the architecture or with code
-
--   need the documentation of the architecture for their work
-
--   have to come up with decisions about the system or its development
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should know all parties involved in development of the system or
-affected by the system. Otherwise, you may get nasty surprises later in
-the development process. These stakeholders determine the extent and the
-level of detail of your work and its results.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Table with role names, person names, and their expectations with respect
-to the architecture and its documentation.
-
-| Role/Name       | Contact                        | Expectations           |
-|-----------------|--------------------------------|------------------------|
-| Maryam Pate     | Venture Capital Firm XYZ       | *                      |
-| Raj Gupta       | Local Transportation Authority | *                      |
-| Megan Chen      | Creative Agency ABC            | *                      |
-| Amirah Rahman   | RideShare Driver Association   | *                      |
-| Javier Gomez    | Sustainable Transportation NGO | *                      |
-| John            | Investor                       | innovation, scalability|
-| Fahrer          | RideShare Driver Association   | *                      |
+| Role/Name     | Contact                        | Expectations            |
+| ------------- | ------------------------------ | ----------------------- |
+| Maryam Pate   | Venture Capital Firm XYZ       | *                       |
+| Raj Gupta     | Local Transportation Authority | *                       |
+| Megan Chen    | Creative Agency ABC            | *                       |
+| Amirah Rahman | RideShare Driver Association   | *                       |
+| Javier Gomez  | Sustainable Transportation NGO | *                       |
+| John          | Investor                       | Innovation, Skalierbarkeit |
+| Fahrer        | RideShare Driver Association   | *                       |
 
 <div style="page-break-after: always;"></div>
 
 # Architecture Constraints
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-Any requirement that constraints software architects in their freedom of
-design and implementation decisions or decision about the development
-process. These constraints sometimes go beyond individual systems and
-are valid for whole organizations and companies.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Architects should know exactly where they are free in their design
-decisions and where they must adhere to constraints. Constraints must
-always be dealt with; they may be negotiable, though.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Simple tables of constraints with explanations. If needed you can
-subdivide them into technical constraints, organizational and political
-constraints and conventions (e.g. programming or versioning guidelines,
-documentation or naming conventions)
-
-See [Architecture Constraints](https://docs.arc42.org/section-2/) in the
-arc42 documentation.
+| Constraints                           | Background and/or motivation                                                                                   |
+| ------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Limited Resources & Funding           | Als Start-Up sind die verfügbaren Ressourcen limitiert                                                        |
+| Mobile App                            | Zielt hauptsächlich auf mobile Kundschaft ab und erhöht Flexibilität (Autos haben keinen PC)                |
+| Reliable & Stable Internet Connection | Um Funktionalität zu gewährleisten, muss eine durchgehende Verbindung zum Internet bestehen                  |
+| Limited Scope                         | Entwicklung des Programms ist auf die wichtigsten Elemente reduziert, entsprechend der Teamgröße             |
+| Local Laws and Restrictions           | App muss Gesetzeskonform gegenüber lokalen Regelungen etc. sein um eventuellen legalen Konflikten vorzubeugen |
 
 <div style="page-break-after: always;"></div>
 
 # System Scope and Context
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-System scope and context - as the name suggests - delimits your system
-(i.e. your scope) from all its communication partners (neighboring
-systems and users, i.e. the context of your system). It thereby
-specifies the external interfaces.
-
-If necessary, differentiate the business context (domain specific inputs
-and outputs) from the technical context (channels, protocols, hardware).
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-The domain interfaces and technical interfaces to communication partners
-are among your system’s most critical aspects. Make sure that you
-completely understand them.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Various options:
-
--   Context diagrams
-
--   Lists of communication partners and their interfaces.
-
-See [Context and Scope](https://docs.arc42.org/section-3/) in the arc42
-documentation.
-
 ## Business Context
 
-<div class="formalpara-title">
+![BusinessContextDiagram](images/project/BusinessContext.drawio.png)
 
-**Contents**
-
-</div>
-
-Specification of **all** communication partners (users, IT-systems, …)
-with explanations of domain specific inputs and outputs or interfaces.
-Optionally you can add domain specific formats or communication
-protocols.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-All stakeholders should understand which data are exchanged with the
-environment of the system.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-All kinds of diagrams that show the system as a black box and specify
-the domain interfaces to communication partners.
-
-Alternatively (or additionally) you can use a table. The title of the
-table is the name of your system, the three columns contain the name of
-the communication partner, the inputs, and the outputs.
-
-**\<Diagram or Table>**
-
-**\<optionally: Explanation of external domain interfaces>**
+**Details**
 
 ## Technical Context
 
-<div class="formalpara-title">
+![TechnicalContexDiagram](images/project/TechnicalContext.drawio.png)
 
-**Contents**
-
-</div>
-
-Technical interfaces (channels and transmission media) linking your
-system to its environment. In addition a mapping of domain specific
-input/output to the channels, i.e. an explanation which I/O uses which
-channel.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Many stakeholders make architectural decision based on the technical
-interfaces between the system and its context. Especially infrastructure
-or hardware designers decide these technical interfaces.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-E.g. UML deployment diagram describing channels to neighboring systems,
-together with a mapping table showing the relationships between channels
-and input/output.
-
-**\<Diagram or Table>**
-
-**\<optionally: Explanation of technical interfaces>**
-
-**\<Mapping Input/Output to Channels>**
+| **_Node / Artifact_**       | **_Description_**                                                                                                                     |
+|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| App Development Environment | Umgebung für Entwicklung, Überwachung und Deployment des Systems, agiert basierend auf DevOps Prinzipien                              |
+| Database                    | Off-Location Datenbank mit ausgewähltem RDBMS die relevante Nutzer und Systemdaten speichert                                          |
+| RideShare Backend           | Herz des Systems, ein Kollektiv an Prozessen die jede Kommunikation weiterverarbeiten                                                 |
+| User Device                 | Handy oder Tablet mit installierter RideShare App, schickt Nutzer-Kommunikation und Information an das Backend und umgekehrt          |
+| GPS Provider                | Stellt ein GPS zur verfügung mit dessen Hilfe die App relevante Daten für die Nutzer bereitstellen kann                               |
+| Payment Processing Provider | Verarbeitet Transaktionen zwischen Nutzern und der App/anderen Nutzern und stellt sicher dass diese sicher und rechtskonform ablaufen |
 
 <div style="page-break-after: always;"></div>
 
@@ -316,18 +121,21 @@ and input/output.
 
 </div>
 
-A short summary and explanation of the fundamental decisions and
-solution strategies, that shape system architecture. It includes
+Dieser Abschnitt skizziert die primären Entscheidungen und Lösungsstrategien, die den Kern unserer Systemarchitektur für die Fahrgemeinschafts-App bilden. Unser Fokus umfasst:
 
--   technology decisions
+- Technologieentscheidungen: Die Übernahme eines robusten und skalierbaren Technologiestapels, einschließlich eines cloud-basierten Back-Ends für Flexibilität und Skalierbarkeit, einer relationalen Datenbank für Datenintegrität und der Entwicklung von nativen mobilen Apps, um eine nahtlose Benutzererfahrung zu gewährleisten.
 
--   decisions about the top-level decomposition of the system, e.g.
-    usage of an architectural pattern or design pattern
+- Systemzerlegung: Nutzung einer Mikroservices-Architektur, um einen skalierbaren, unabhängigen Einsatz verschiedener Aspekte der Anwendung zu ermöglichen, wie Benutzerverwaltung, Fahrtenvermittlung, Zahlungsabwicklung und Feedback-Systeme.
 
--   decisions on how to achieve key quality goals
+- Erreichen von Qualitätszielen:
 
--   relevant organizational decisions, e.g. selecting a development
-    process or delegating certain tasks to third parties.
+    * Leistung: Implementierung effizienter Algorithmen für Fahrtenvermittlung und Standortverfolgung, um eine hohe Reaktionsfähigkeit zu gewährleisten.
+    * Sicherheit: Sicherstellung von Datenschutz und -sicherheit durch Ende-zu-Ende-Verschlüsselung und regelmäßige Sicherheitsaudits.
+    * Benutzerfreundlichkeit: Fokus auf intuitives UI/UX-Design für Fahrer und Passagiere, um die Benutzerzufriedenheit zu erhöhen.
+- Organisatorische Entscheidungen:
+
+    * Entwicklungsprozess: Übernahme agiler Methoden, um eine schnelle und anpassungsfähige Reaktion auf Feedback und sich ändernde Anforderungen zu ermöglichen.
+    * Integrationen von Drittanbietern: Delegieren von Aufgaben wie Zahlungsabwicklung an zuverlässige Drittanbieterdienste, um Sicherheit und Effizienz zu gewährleisten.
 
 <div class="formalpara-title">
 
@@ -335,758 +143,145 @@ solution strategies, that shape system architecture. It includes
 
 </div>
 
-These decisions form the cornerstones for your architecture. They are
-the foundation for many other detailed decisions or implementation
-rules.
+Diese strategischen Entscheidungen dienen als Grundlage unserer Architektur und leiten detailliertere Entscheidungen und Implementierungsregeln. Sie sind motiviert durch unsere Hauptziele: die Schaffung einer effizienten, sicheren und benutzerfreundlichen Fahrgemeinschaftsplattform. Diese Entscheidungen sind in unserem Verständnis der Problemstellung verankert, unserer Verpflichtung zu Qualitätszielen und der Notwendigkeit, Schlüsselbeschränkungen effektiv zu navigieren.
 
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Keep the explanations of such key decisions short.
-
-Motivate what was decided and why it was decided that way, based upon
-problem statement, quality goals and key constraints. Refer to details
-in the following sections.
-
-See [Solution Strategy](https://docs.arc42.org/section-4/) in the arc42
-documentation.
+| **Goal/Requirements** | **Architectural Approach**                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Security              | Im Rahmen des Microservice-Ansatzes wird zur Gewährleistung der Sicherheit ein dezentrales Muster verwendet, um die Skalierbarkeit zu unterstützen und die größte Garantie zu bieten. Es sollte sich um eine Lösung auf Plattformebene handeln, für die ein eigenes Team zuständig ist und die zur einfacheren Implementierung auf bestehenden Lösungen basiert.                                                                             |
+| Reliability           | Um so zuverlässig wie möglich zu sein, muss ein Microservice-Modell ein gewisses Maß an Fehlertoleranz aufweisen. Darüber hinaus muss eine klare Dokumentation für die Fehlersuche und Systemwartung geführt werden, mit einer Implementierung von Monitoring, Logging und Health Checks. Darüber hinaus ist es wichtig, die Dienste voneinander zu isolieren, um zu verhindern, dass der Ausfall eines Teils sich auf die anderen auswirkt. |
+| Scalability           | Die Microservices-Architektur ermöglicht granulare Skalierbarkeit, Lastausgleich, Fehlerisolierung, unabhängige Bereitstellung, technologische Flexibilität, Elastizität, Ressourceneffizienz und verbesserte Leistung und ist damit ideal für die Erfüllung von Skalierungsanforderungen.                                                                                                                                                   |
 
 <div style="page-break-after: always;"></div>
 
 # Building Block View
 
-<div class="formalpara-title">
+## Scope and Context
 
-**Content**
+![BasicLevel](images/project/whitebox.drawio.png)
 
-</div>
+* frame:
+    * Stellt das gesamte Framework abstrahiert dar
 
-The building block view shows the static decomposition of the system
-into building blocks (modules, components, subsystems, classes,
-interfaces, packages, libraries, frameworks, layers, partitions, tiers,
-functions, macros, operations, data structures, …) as well as their
-dependencies (relationships, associations, …)
 
-This view is mandatory for every architecture documentation. In analogy
-to a house this is the *floor plan*.
+| **Name**     | **Responsibility** |
+| ------------------ | ------------------------ |
+| RideShare App | Verwaltet alle Funktionalitäten der App, verarbeitet alle notwendigen Daten, gibt Feedback zu eventuellen Problemen.              |
+| Payment System | Nimmt Payment Requests entgegen und stellt sicher, dass diese Rechtskonform, sicher und adäquat durchgeführt werden.              |
+| GPS | Kommunziert mit der Rideshare App via API und stellt relevante Routen-, Positions- und Ortsdaten zur Verfügung  |
+| Administrator | Personal mit der Zuständigkeit für die Verwaltung, Wartung und Überwachung des Systemstatus  |
+| User | Nutzer der App    |
 
-<div class="formalpara-title">
+## Level 1
 
-**Motivation**
+![WhiteBoxLevel1](images/project/whitebox_level1.drawio.png)
 
-</div>
 
-Maintain an overview of your source code by making its structure
-understandable through abstraction.
+### White Box *RideShare App*
 
-This allows you to communicate with your stakeholder on an abstract
-level without disclosing implementation details.
+Die interne Struktur der RideShare App, eine Darstellung der internen Architektur mit etwas mehr Details
 
-<div class="formalpara-title">
+| **Name**     | **Responsibility** |
+| ------------------ | ------------------------ |
+| Admin Interface | Erlaubt den Administratoren/-innen ihre Verpflichtungen gegenüber der App zu verfolgen |
+| Database | Speichert & Verwaltet relvante System- und Nutzerdaten |
+| Program | Das Kollektiv an Prozessen die relevante Daten verarbeiten und für die Administratoren/-innen und Nutzer/innen aufbereiten |
+| User Interface | Zeigt verarbeitete und aufbereitete Daten für den Nutzer an, sammelt und sendet Systemrelevante Daten an das Programm |
 
-**Form**
 
-</div>
-
-The building block view is a hierarchical collection of black boxes and
-white boxes (see figure below) and their descriptions.
-
-![Hierarchy of building blocks](images/05_building_blocks-EN.png)
-
-**Level 1** is the white box description of the overall system together
-with black box descriptions of all contained building blocks.
-
-**Level 2** zooms into some building blocks of level 1. Thus it contains
-the white box description of selected building blocks of level 1,
-together with black box descriptions of their internal building blocks.
-
-**Level 3** zooms into selected building blocks of level 2, and so on.
-
-See [Building Block View](https://docs.arc42.org/section-5/) in the
-arc42 documentation.
-
-## Whitebox Overall System
-
-Here you describe the decomposition of the overall system using the
-following white box template. It contains
-
--   an overview diagram
-
--   a motivation for the decomposition
-
--   black box descriptions of the contained building blocks. For these
-    we offer you alternatives:
-
-    -   use *one* table for a short and pragmatic overview of all
-        contained building blocks and their interfaces
-
-    -   use a list of black box descriptions of the building blocks
-        according to the black box template (see below). Depending on
-        your choice of tool this list could be sub-chapters (in text
-        files), sub-pages (in a Wiki) or nested elements (in a modeling
-        tool).
-
--   (optional:) important interfaces, that are not explained in the
-    black box templates of a building block, but are very important for
-    understanding the white box. Since there are so many ways to specify
-    interfaces why do not provide a specific template for them. In the
-    worst case you have to specify and describe syntax, semantics,
-    protocols, error handling, restrictions, versions, qualities,
-    necessary compatibilities and many things more. In the best case you
-    will get away with examples or simple signatures.
-
-***\<Overview Diagram>***
-
-Motivation  
-*\<text explanation>*
-
-Contained Building Blocks  
-*\<Description of contained building block (black boxes)>*
-
-Important Interfaces  
-*\<Description of important interfaces>*
-
-Insert your explanations of black boxes from level 1:
-
-If you use tabular form you will only describe your black boxes with
-name and responsibility according to the following schema:
-
-| **Name**         | **Responsibility** |
-|------------------|--------------------|
-| *\<black box 1>* |  *\<Text>*         |
-| *\<black box 2>* |  *\<Text>*         |
-
-If you use a list of black box descriptions then you fill in a separate
-black box template for every important building block . Its headline is
-the name of the black box.
-
-### \<Name black box 1>
-
-Here you describe \<black box 1> according the the following black box
-template:
-
--   Purpose/Responsibility
-
--   Interface(s), when they are not extracted as separate paragraphs.
-    This interfaces may include qualities and performance
-    characteristics.
-
--   (Optional) Quality-/Performance characteristics of the black box,
-    e.g.availability, run time behavior, ….
-
--   (Optional) directory/file location
-
--   (Optional) Fulfilled requirements (if you need traceability to
-    requirements).
-
--   (Optional) Open issues/problems/risks
-
-*\<Purpose/Responsibility>*
-
-*\<Interface(s)>*
-
-*\<(Optional) Quality/Performance Characteristics>*
-
-*\<(Optional) Directory/File Location>*
-
-*\<(Optional) Fulfilled Requirements>*
-
-*\<(optional) Open Issues/Problems/Risks>*
-
-### \<Name black box 2>
-
-*\<black box template>*
-
-### \<Name black box n>
-
-*\<black box template>*
-
-### \<Name interface 1>
-
-…
-
-### \<Name interface m>
 
 ## Level 2
 
-Here you can specify the inner structure of (some) building blocks from
-level 1 as white boxes.
+![WhiteBoxLevel2](images/project/whitebox_level2.drawio.png)
 
-You have to decide which building blocks of your system are important
-enough to justify such a detailed description. Please prefer relevance
-over completeness. Specify important, surprising, risky, complex or
-volatile building blocks. Leave out normal, simple, boring or
-standardized parts of your system
+### White Box *RideShare App -> Program*
 
-### White Box *\<building block 1>*
-
-…describes the internal structure of *building block 1*.
-
-*\<white box template>*
-
-### White Box *\<building block 2>*
-
-*\<white box template>*
-
-…
-
-### White Box *\<building block m>*
-
-*\<white box template>*
-
-## Level 3
-
-Here you can specify the inner structure of (some) building blocks from
-level 2 as white boxes.
-
-When you need more detailed levels of your architecture please copy this
-part of arc42 for additional levels.
-
-### White Box \<\_building block x.1\_\>
-
-Specifies the internal structure of *building block x.1*.
-
-*\<white box template>*
-
-### White Box \<\_building block x.2\_\>
-
-*\<white box template>*
-
-### White Box \<\_building block y.1\_\>
-
-*\<white box template>*
-
-<div style="page-break-after: always;"></div>
+Eine Detailansicht der Programmarchitektur.
 
 # Runtime View
 
-<div class="formalpara-title">
 
-**Contents**
 
-</div>
+## \<Scenario1 - Rider Navigiert zu Fahrerposition>
+![runtimedgscenario1](images/project/Runtimedg1.drawio.png)
+  
+Im Diagramm sind vier Akteure dargestellt: Rider, RideShare App, Database und GPS. Hier ist die Beschreibung des dargestellten Prozesses:
+1. Der Rider meldet sich für eine Fahrt an.
+2. Die App sendet eine Anfrage zur Bestätigung an die Datenbank.
+3. Die Datenbank antwortet auf die Anfrage und die App leitet den Nutzer zur Navigationsansicht weiter.
+4. Der Nutzer bekommt die Position des Fahrers in der App angezeigt und kann seine eigene Position ändern.
+5. Nachdem der Nutzer sein Ziel erreicht hat, aktualisiert die App den Status der Fahrt und wechselt zur nächsten Benutzeroberfläche.
 
-The runtime view describes concrete behavior and interactions of the
-system’s building blocks in form of scenarios from the following areas:
 
--   important use cases or features: how do building blocks execute
-    them?
+## \<Scenario2 - Rider Zahlungsversuch>
+![runtimedgscenario2](images/project/Runtimedg2.drawio.png)
 
--   interactions at critical external interfaces: how do building blocks
-    cooperate with users and neighboring systems?
+Für das Szenario "Nutzer bezahlt eine Fahrt" in einer Fahrgemeinschafts-App können wir die folgenden wichtigen Schritte in Betracht ziehen:
 
--   operation and administration: launch, start-up, stop
-
--   error and exception scenarios
-
-Remark: The main criterion for the choice of possible scenarios
-(sequences, workflows) is their **architectural relevance**. It is
-**not** important to describe a large number of scenarios. You should
-rather document a representative selection.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should understand how (instances of) building blocks of your system
-perform their job and communicate at runtime. You will mainly capture
-scenarios in your documentation to communicate your architecture to
-stakeholders that are less willing or able to read and understand the
-static models (building block view, deployment view).
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-There are many notations for describing scenarios, e.g.
-
--   numbered list of steps (in natural language)
-
--   activity diagrams or flow charts
-
--   sequence diagrams
-
--   BPMN or EPCs (event process chains)
-
--   state machines
-
--   …
-
-See [Runtime View](https://docs.arc42.org/section-6/) in the arc42
-documentation.
-
-## \<Runtime Scenario 1>
-
--   *\<insert runtime diagram or textual description of the scenario>*
-
--   *\<insert description of the notable aspects of the interactions
-    between the building block instances depicted in this diagram.>*
-
-## \<Runtime Scenario 2>
-
-## …
-
-## \<Runtime Scenario n>
-
-<div style="page-break-after: always;"></div>
+1. Nutzer wählt die Zahlungsoption in der App aus.
+2. App sendet Zahlungsdetails an den Zahlungsservice.
+3. Zahlungsservice interagiert mit dem Zahlungsgateway.
+4. Zahlungsgateway führt die Transaktion durch und sendet eine Antwort.
+5. Zahlungsservice aktualisiert den Zahlungsstatus in der Datenbank.
+6. App zeigt dem Nutzer den Zahlungsstatus an.
 
 # Deployment View
 
-<div class="formalpara-title">
 
-**Content**
-
-</div>
-
-The deployment view describes:
-
-1.  technical infrastructure used to execute your system, with
-    infrastructure elements like geographical locations, environments,
-    computers, processors, channels and net topologies as well as other
-    infrastructure elements and
-
-2.  mapping of (software) building blocks to that infrastructure
-    elements.
-
-Often systems are executed in different environments, e.g. development
-environment, test environment, production environment. In such cases you
-should document all relevant environments.
-
-Especially document a deployment view if your software is executed as
-distributed system with more than one computer, processor, server or
-container or when you design and construct your own hardware processors
-and chips.
-
-From a software perspective it is sufficient to capture only those
-elements of an infrastructure that are needed to show a deployment of
-your building blocks. Hardware architects can go beyond that and
-describe an infrastructure to any level of detail they need to capture.
-
-<div class="formalpara-title">
+![DeploymentDiagram](images/project/DeploymentDiagram.drawio.png)
 
 **Motivation**
 
-</div>
+Diese einfache Darstellung der Infrastruktur soll den Leser/innen und Stakeholdern der Architektur ein ungefähres Verständnis dieser näherbringen. Ohne konkret über technische Details Bescheid zu geben, soll mit Hilfe des Diagramms ein Bild bereitgestellt werden das eine gewisse Übersicht gibt.
 
-Software does not run without hardware. This underlying infrastructure
-can and will influence a system and/or some cross-cutting concepts.
-Therefore, there is a need to know the infrastructure.
-
-Maybe a highest level deployment diagram is already contained in section
-3.2. as technical context with your own infrastructure as ONE black box.
-In this section one can zoom into this black box using additional
-deployment diagrams:
-
--   UML offers deployment diagrams to express that view. Use it,
-    probably with nested diagrams, when your infrastructure is more
-    complex.
-
--   When your (hardware) stakeholders prefer other kinds of diagrams
-    rather than a deployment diagram, let them use any kind that is able
-    to show nodes and channels of the infrastructure.
-
-See [Deployment View](https://docs.arc42.org/section-7/) in the arc42
-documentation.
-
-## Infrastructure Level 1
-
-Describe (usually in a combination of diagrams, tables, and text):
-
--   distribution of a system to multiple locations, environments,
-    computers, processors, .., as well as physical connections between
-    them
-
--   important justifications or motivations for this deployment
-    structure
-
--   quality and/or performance features of this infrastructure
-
--   mapping of software artifacts to elements of this infrastructure
-
-For multiple environments or alternative deployments please copy and
-adapt this section of arc42 for all relevant environments.
-
-***\<Overview Diagram>***
-
-Motivation  
-*\<explanation in text form>*
-
-Quality and/or Performance Features  
-*\<explanation in text form>*
-
-Mapping of Building Blocks to Infrastructure  
-*\<description of the mapping>*
-
-## Infrastructure Level 2
-
-Here you can include the internal structure of (some) infrastructure
-elements from level 1.
-
-Please copy the structure from level 1 for each selected element.
-
-### *\<Infrastructure Element 1>*
-
-*\<diagram + explanation>*
-
-### *\<Infrastructure Element 2>*
-
-*\<diagram + explanation>*
-
-…
-
-### *\<Infrastructure Element n>*
-
-*\<diagram + explanation>*
-
-<div style="page-break-after: always;"></div>
-
-# Cross-cutting Concepts
-
-<div class="formalpara-title">
-
-**Content**
-
-</div>
-
-This section describes overall, principal regulations and solution ideas
-that are relevant in multiple parts (= cross-cutting) of your system.
-Such concepts are often related to multiple building blocks. They can
-include many different topics, such as
-
--   models, especially domain models
-
--   architecture or design patterns
-
--   rules for using specific technology
-
--   principal, often technical decisions of an overarching (=
-    cross-cutting) nature
-
--   implementation rules
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Concepts form the basis for *conceptual integrity* (consistency,
-homogeneity) of the architecture. Thus, they are an important
-contribution to achieve inner qualities of your system.
-
-Some of these concepts cannot be assigned to individual building blocks,
-e.g. security or safety.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-The form can be varied:
-
--   concept papers with any kind of structure
-
--   cross-cutting model excerpts or scenarios using notations of the
-    architecture views
-
--   sample implementations, especially for technical concepts
-
--   reference to typical usage of standard frameworks (e.g. using
-    Hibernate for object/relational mapping)
-
-<div class="formalpara-title">
-
-**Structure**
-
-</div>
-
-A potential (but not mandatory) structure for this section could be:
-
--   Domain concepts
-
--   User Experience concepts (UX)
-
--   Safety and security concepts
-
--   Architecture and design patterns
-
--   "Under-the-hood"
-
--   development concepts
-
--   operational concepts
-
-Note: it might be difficult to assign individual concepts to one
-specific topic on this list.
-
-![Possible topics for crosscutting
-concepts](images/08-Crosscutting-Concepts-Structure-EN.png)
-
-See [Concepts](https://docs.arc42.org/section-8/) in the arc42
-documentation.
-
-## *\<Concept 1>*
-
-*\<explanation>*
-
-## *\<Concept 2>*
-
-*\<explanation>*
-
-…
-
-## *\<Concept n>*
-
-*\<explanation>*
-
-<div style="page-break-after: always;"></div>
+**Dezentralisierte Infrastruktur**
+Die gesamte Infrastruktur folgt einem dezentralisiertem Modell, bei dem die Entwicklungsumgebung physisch getrennt ist von den tatsächlich aktiven Servern, auf denen die RideShare Applikation und ihre assozierten Services laufen werden. Auch bei eventuellen Störungen wie Stromausfall in der Entwicklungsumgebung, sollten die Server und der Service als Ganzes nicht grob beeinflusst werden. Auch bei Ausfall von non-kritischen Services, sollte eine grundlegende Funktionalität dadurch gewährleistet werden.
 
 # Architecture Decisions
 
-<div class="formalpara-title">
+| **Problem**                     | **Considered Alternatives**        | **Decision**                     |
+|---------------------------------|------------------------------------|----------------------------------|
+| Security Architecture           | _Monolithic vs. Microservices_     | Microservices                    |
+| Reliability and Fault Tolerance | _Active-Passive vs. Active-Active_ | Active-Active with Microservices |
+| Scalability and Deployment      | _Monolithic vs. Microservices_     | Microservices                    |
 
-**Contents**
+### **Warum Microservices als StartUp?**
 
-</div>
-
-Important, expensive, large scale or risky architecture decisions
-including rationales. With "decisions" we mean selecting one alternative
-based on given criteria.
-
-Please use your judgement to decide whether an architectural decision
-should be documented here in this central section or whether you better
-document it locally (e.g. within the white box template of one building
-block).
-
-Avoid redundancy. Refer to section 4, where you already captured the
-most important decisions of your architecture.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Stakeholders of your system should be able to comprehend and retrace
-your decisions.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Various options:
-
--   ADR ([Documenting Architecture
-    Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions))
-    for every important decision
-
--   List or table, ordered by importance and consequences or:
-
--   more detailed in form of separate sections per decision
-
-See [Architecture Decisions](https://docs.arc42.org/section-9/) in the
-arc42 documentation. There you will find links and examples about ADR.
-
-<div style="page-break-after: always;"></div>
+Nach intesiver Konversation und Kollaboration mit unseren Stakeholders, sind wir zu dem Schluss gekommen, dass nach erfolgreichem Start eine rapide Expansion in neue Gebiete vorgesehen ist. Da es nicht notwendig ist so schnell wie möglich an den Markt zu kommen, ist es wichtiger ein gesundes Framework zu erstellen, welches das dann auch möglichst problemlos ermöglicht. Es bedeutet zwar eine kurzfristige Erhöhung der Entwicklungszeit, aber dient dazu zukünftige Entwicklungszyklen agiler umsetzen zu können.
 
 # Quality Requirements
 
-<div class="formalpara-title">
-
-**Content**
-
-</div>
-
-This section contains all quality requirements as quality tree with
-scenarios. The most important ones have already been described in
-section 1.2. (quality goals)
-
-Here you can also capture quality requirements with lesser priority,
-which will not create high risks when they are not fully achieved.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Since quality requirements will have a lot of influence on architectural
-decisions you should know for every stakeholder what is really important
-to them, concrete and measurable.
-
-See [Quality Requirements](https://docs.arc42.org/section-10/) in the
-arc42 documentation.
-
 ## Quality Tree
 
-<div class="formalpara-title">
-
-**Content**
-
-</div>
-
-The quality tree (as defined in ATAM – Architecture Tradeoff Analysis
-Method) with quality/evaluation scenarios as leafs.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-The tree structure with priorities provides an overview for a sometimes
-large number of quality requirements.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-The quality tree is a high-level overview of the quality goals and
-requirements:
-
--   tree-like refinement of the term "quality". Use "quality" or
-    "usefulness" as a root
-
--   a mind map with quality categories as main branches
-
-In any case the tree should include links to the scenarios of the
-following section.
+![qualitytreedg](images/project/quality_tree.png)
 
 ## Quality Scenarios
 
-<div class="formalpara-title">
+### Security
 
-**Contents**
+* Ein Nutzer hat sensitive Daten auf der App gespeichert. Obwohl sein Login in falschen Händen landet, sind seine Daten sicher und können nicht über die App gefährdet werden.
 
-</div>
+### Reliability
 
-Concretization of (sometimes vague or implicit) quality requirements
-using (quality) scenarios.
+* Eine Fahrerin verwendet die App, um sich zu einem Fahrgast zu navigieren, während sie durch einen Tunnel fährt. Obwohl die Verbindung instabil ist, wird eine ungefähre Route angezeigt, und der Fahrgast wird erreicht.
 
-These scenarios describe what should happen when a stimulus arrives at
-the system.
+### Scalability
 
-For architects, two kinds of scenarios are important:
-
--   Usage scenarios (also called application scenarios or use case
-    scenarios) describe the system’s runtime reaction to a certain
-    stimulus. This also includes scenarios that describe the system’s
-    efficiency or performance. Example: The system reacts to a user’s
-    request within one second.
-
--   Change scenarios describe a modification of the system or of its
-    immediate environment. Example: Additional functionality is
-    implemented or requirements for a quality attribute change.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Scenarios make quality requirements concrete and allow to more easily
-measure or decide whether they are fulfilled.
-
-Especially when you want to assess your architecture using methods like
-ATAM you need to describe your quality goals (from section 1.2) more
-precisely down to a level of scenarios that can be discussed and
-evaluated.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Tabular or free form text.
-
-<div style="page-break-after: always;"></div>
+* Ein Entwicklungsteam wurde damit beauftragt die App auf eine Expansion vorzubereiten. Obwohl erwartet wird, dass sich die Nutzeranzahl verdoppeln wird, verzögert die damit einhergehende Skalierung der relevanten Systeme die Entwicklungszeit nicht.
 
 # Risks and Technical Debts
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-A list of identified technical risks or technical debts, ordered by
-priority
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-“Risk management is project management for grown-ups” (Tim Lister,
-Atlantic Systems Guild.)
-
-This should be your motto for systematic detection and evaluation of
-risks and technical debts in the architecture, which will be needed by
-management stakeholders (e.g. project managers, product owners) as part
-of the overall risk analysis and measurement planning.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-List of risks and/or technical debts, probably including suggested
-measures to minimize, mitigate or avoid risks or reduce technical debts.
-
-See [Risks and Technical Debt](https://docs.arc42.org/section-11/) in
-the arc42 documentation.
-
-<div style="page-break-after: always;"></div>
+| **Risk/Technical Debt**             | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Data Security Vulnerabilities       | Die Microservices-Architektur kann aufgrund des verteilten Charakters des Systems potenzielle Sicherheitsschwachstellen aufweisen, die zu Datenverletzungen und unbefugtem Zugriff führen können.Empfohlene Maßnahmen: Implementieren Sie starke Authentifizierungs- und Autorisierungsmechanismen, verschlüsseln Sie Daten bei der Übertragung und im Ruhezustand, führen Sie regelmäßige Sicherheitsaudits durch und halten Sie Sicherheits-Patches auf dem neuesten Stand, um diese Risiken zu minimieren.                                                              |
+| Service Interdependencies           | Durch die Abhängigkeit von Diensten kann ein komplexes Netz von Interaktionen entstehen, das das Risiko erhöht, dass sich Fehler kaskadenartig im System ausbreiten und dessen Zuverlässigkeit und Betriebszeit beeinträchtigen können.Empfohlene Maßnahmen:Implementieren Sie eine strikte Dienstisolierung, entwerfen Sie Verträge und APIs sorgfältig und verwenden Sie Stromkreisunterbrecher, um Ausfälle zu verwalten und die Systemstabilität zu erhalten. Regelmäßige Überwachung und Protokollierung von Dienstinteraktionen, um Probleme frühzeitig zu erkennen. |
+| Technical Debt Due to Rapid Scaling | Die schnelle Skalierung von Microservices kann zu technischen Schulden in Bezug auf die Überwachung, die Bereitstellung von Ressourcen und die richtige Dokumentation führen, was sich langfristig auf die Wartbarkeit und die Fehlerbehebung auswirkt: Implementieren Sie automatisierte Skalierungs- und Überwachungslösungen (z. B. Kubernetes für die Orchestrierung), aktualisieren und verbessern Sie regelmäßig die Dokumentation und planen Sie Zeit für Refactoring und Sprints zum Abbau technischer Schulden ein, um diese Probleme proaktiv anzugehen.         |
 
 # Glossary
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-The most important domain and technical terms that your stakeholders use
-when discussing the system.
-
-You can also see the glossary as source for translations if you work in
-multi-language teams.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should clearly define your terms, so that all stakeholders
-
--   have an identical understanding of these terms
-
--   do not use synonyms and homonyms
-
-A table with columns \<Term> and \<Definition>.
-
-Potentially more columns in case you need translations.
-
-See [Glossary](https://docs.arc42.org/section-12/) in the arc42
-documentation.
-
-| Term        | Definition        |
-|-------------|-------------------|
-| *\<Term-1>* | *\<definition-1>* |
-| *\<Term-2>* | *\<definition-2>* |
+| Term          | Definition          |
+| ------------- | ------------------- |
+| Stakeholder | Eine Person, Gruppe oder Organisation, die ein Interesse an den Ergebnissen einer Softwarearchitektur hat oder von ihnen betroffen ist. Dazu gehören unter anderem Kunden, Benutzer, Entwickler, Architekten, Projektmanager und Auftraggeber. |
+| Server | Ein Computer oder System, das über ein Netzwerk Ressourcen, Daten, Dienste oder Programme für andere Computer, sogenannte Clients, bereitstellt. In Bezug auf die Softwarearchitektur bezieht sich der Begriff häufig auf einen Computer, der einen Webdienst oder eine Webanwendung hostet. |
+| Infrastruktur | Die Struktur in der das gesamte RideShare Service läuft | 
+| App | Kurzform für Applikation - hier immer die RideShare Applikation |
+| Scalability | Skalierbarkeit - wie leicht ist es auszubauen |
